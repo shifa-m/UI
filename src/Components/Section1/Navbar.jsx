@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <div  >
          <MainContent/>
-        <img src="https://i.pinimg.com/736x/99/6e/8e/996e8e6a0f6e99d2e0b18911c3db5e8c.jpg"  className='h-screen w-full object-cover' />
+        <img src="https://images.unsplash.com/photo-1650012762279-e8b5f90f504f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  className='h-screen w-full object-cover' />
         
       </div>
 
