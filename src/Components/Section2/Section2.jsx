@@ -1,10 +1,11 @@
 import React from 'react'
 import Uppercontent from './Uppercontent'
 
-const Section2 = () => {
+
+const Section2 = ({images}) => {
   return (
     <div>
-<Uppercontent/>
+<Uppercontent image={images}/>
     </div>
   )
 }
