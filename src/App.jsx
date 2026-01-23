@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Components/Section1/Navbar'
 import Section2 from './Components/Section2/Section2'
 import Uppercontent from './Components/Section2/Uppercontent'
+import Section3 from './Components/Section3/Section3'
 
 const App = () => {
 
@@ -29,16 +30,49 @@ const App = () => {
   },
   {
     img:"https://i.pinimg.com/736x/5b/d1/a2/5bd1a2689ac916f9b24b83e3a1136112.jpg"
-  },
-  
+  }]
 
-  ]
+ const section3=[{
+     img:"https://i.pinimg.com/1200x/9e/8b/6e/9e8b6ed6ee305de7e556f0480b7443b5.jpg",
+     
+ },
+ {
+     img:"https://i.pinimg.com/1200x/aa/f3/aa/aaf3aa4e15769c860aff8b2a22edfc78.jpg"
+ },
+ {
+    
+      img:"https://i.pinimg.com/1200x/30/29/3f/30293f670a7fb51be8ad92b05bf0a566.jpg",
+ },
+ {
+     img:"https://i.pinimg.com/1200x/3c/2b/00/3c2b0020ddceaca5048f92ef76f99b65.jpg"
+     
+ },
+ {
+     img:"https://i.pinimg.com/1200x/1d/78/c4/1d78c43191f5490183d00b7e86093bfa.jpg"
+     
+ },
+ {
+     img:"https://i.pinimg.com/736x/91/ef/92/91ef92aad20d5acd4a870117464aed61.jpg"
+ },
+ {
+     img:"https://i.pinimg.com/1200x/8b/e0/77/8be077e57ea5f8e0ebb011af7507eb1c.jpg"
+ },
+ {
+     img:"https://i.pinimg.com/1200x/3c/a9/9a/3ca99a55d718100b7dc154093d704410.jpg"
+     
+ },
+
+
+ ]
+
+  
   return (
     <div>
 
     <Navbar/>
     <Section2 images={images}/>
     <Uppercontent images={images} />
+    <Section3 data={section3}/>
     
     </div>
   )
