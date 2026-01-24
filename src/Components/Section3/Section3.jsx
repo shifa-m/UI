@@ -13,7 +13,6 @@ const Section3 = ({data}) => {
                         <button className='flex ml-4 bg-green-600 p-2 rounded-3xl w-30 justify-center' type="button">Buy Now</button>
                         </div>         
             </div>
-
             ))}
            
             
