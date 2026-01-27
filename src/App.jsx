@@ -11,7 +11,7 @@ const App = () => {
     img:"https://i.pinimg.com/1200x/de/a0/1a/dea01a87b4e0389b06ea43a19e6af30c.jpg"
   },
   {
-    img:"https://i.pinimg.com/736x/3c/70/71/3c70710204308701b098f8693515d875.jpg"
+    img:"https://i.pinimg.com/736x/85/20/04/852004e5ca54038f1002e6a5694e19d4.jpg"
   },
   {
     img:"https://i.pinimg.com/1200x/42/06/69/420669c6c7bde215b8fe5d27f1b8ba1b.jpg"
@@ -34,31 +34,39 @@ const App = () => {
 
  const section3=[{
      img:"https://i.pinimg.com/1200x/9e/8b/6e/9e8b6ed6ee305de7e556f0480b7443b5.jpg",
+     content:"Pizza's"
      
  },
  {
-     img:"https://i.pinimg.com/1200x/aa/f3/aa/aaf3aa4e15769c860aff8b2a22edfc78.jpg"
+     img:"https://i.pinimg.com/1200x/aa/f3/aa/aaf3aa4e15769c860aff8b2a22edfc78.jpg",
+      content:"Burger's"
  },
  {
     
       img:"https://i.pinimg.com/1200x/30/29/3f/30293f670a7fb51be8ad92b05bf0a566.jpg",
+       content:"Cakes"
  },
  {
-     img:"https://i.pinimg.com/1200x/3c/2b/00/3c2b0020ddceaca5048f92ef76f99b65.jpg"
+     img:"https://i.pinimg.com/1200x/3c/2b/00/3c2b0020ddceaca5048f92ef76f99b65.jpg",
+       content:"Pasta's"
      
  },
  {
-     img:"https://i.pinimg.com/1200x/1d/78/c4/1d78c43191f5490183d00b7e86093bfa.jpg"
+     img:"https://i.pinimg.com/1200x/1d/78/c4/1d78c43191f5490183d00b7e86093bfa.jpg",
+       content:"Starter's"
      
  },
  {
-     img:"https://i.pinimg.com/736x/91/ef/92/91ef92aad20d5acd4a870117464aed61.jpg"
+     img:"https://i.pinimg.com/736x/91/ef/92/91ef92aad20d5acd4a870117464aed61.jpg",
+       content:"Dessert"
  },
  {
-     img:"https://i.pinimg.com/1200x/8b/e0/77/8be077e57ea5f8e0ebb011af7507eb1c.jpg"
+     img:"https://i.pinimg.com/1200x/e8/35/ed/e835ed89023c2a6d2d1933321d59efc4.jpg",
+       content:"Momo's"
  },
  {
-     img:"https://i.pinimg.com/1200x/3c/a9/9a/3ca99a55d718100b7dc154093d704410.jpg"
+     img:"https://i.pinimg.com/1200x/3c/a9/9a/3ca99a55d718100b7dc154093d704410.jpg",
+       content:"Plater's"
      
  },
 
