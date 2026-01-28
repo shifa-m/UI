@@ -3,6 +3,7 @@ import Navbar from './Components/Section1/Navbar'
 import Section2 from './Components/Section2/Section2'
 import Uppercontent from './Components/Section2/Uppercontent'
 import Section3 from './Components/Section3/Section3'
+import Section4 from './Components/Section4/section4'
 
 const App = () => {
 
@@ -81,6 +82,7 @@ const App = () => {
     <Section2 images={images}/>
     <Uppercontent images={images} />
     <Section3 data={section3}/>
+    <Section4/>
     
     </div>
   )
