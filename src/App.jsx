@@ -2,8 +2,14 @@ import React from 'react'
 import Navbar from './Components/Section1/Navbar'
 import Section2 from './Components/Section2/Section2'
 import Uppercontent from './Components/Section2/Uppercontent'
-import Section3 from './Components/Section3/Section3'
+import Section3 from './Components/Section1/Dishe'
 import Section4 from './Components/Section4/section4'
+import Home from './Components/Section1/Home'
+import Contact from './Components/Section1/Contact'
+import Dishe from './Components/Section1/Dishe'
+import About from './Components/Section1/About'
+import { Routes , Route } from 'react-router-dom'
+
 
 const App = () => {
 
@@ -83,6 +89,13 @@ const App = () => {
     <Uppercontent images={images} />
     <Section3 data={section3}/>
     <Section4/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+          <Route path='/About' element={<About/>}/>
+            <Route path='/Dishe' element={<Dishe/>}/>
+              <Route path='/Contact' element={<Contact/>}/>
+
+      </Routes>
     
     </div>
   )
