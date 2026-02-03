@@ -27,8 +27,37 @@
 
 // export default section4
 import React from "react";
+import { useState } from "react";
 
 const Section4 = () => {
+
+
+  const [formData, setformData] = useState({
+    firstName:"",
+    lastName:"",
+    message:"",
+  });
+
+  const handleChange=(e)=>{
+    const{name,value}=e.target;
+    setformData((prev)=>({
+      ...prev,
+      [name]:value,
+    }))
+
+    }
+  
+
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+
+    localStorage.setItem("contactFormData",JSON.stringify(formData));
+    alert("Data is Saved Sucessfully");
+    
+  }
+
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-green-300 to-green text-xl  px-6">
       
@@ -50,7 +79,7 @@ const Section4 = () => {
 
     
         <div className="backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             
             <div>
               <label className="block text-sm font-bold text-gray-900 mb-2">
@@ -58,9 +87,13 @@ const Section4 = () => {
               </label>
               <input
                 type="text"
+                name="firstName"
+          value={formData.firstName}
+          onChange={handleChange}
                 className="w-full h-12 bg-transparent border border-gray-500 rounded-lg px-4 text-white placeholder-gray-400 focus:outline-none focus:border-white"
-                placeholder="John"
+                placeholder="John"  
               />
+            
             </div>
 
             <div>
@@ -69,6 +102,9 @@ const Section4 = () => {
               </label>
               <input
                 type="text"
+                name="lastName"
+          value={formData.lastName}
+          onChange={handleChange}
                 className="w-full h-12 bg-transparent border border-gray-500 rounded-lg px-4 text-white placeholder-gray-400 focus:outline-none focus:border-white"
                 placeholder="Doe"
               />
@@ -79,13 +115,18 @@ const Section4 = () => {
                 Message
               </label>
               <textarea
+               name="message"
+          value={formData.message}
+          onChange={handleChange}
                 rows="4"
                 className="w-full bg-transparent border border-gray-500 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-white"
                 placeholder="Write your message..."
               />
             </div>
 
-            <button className="w-full h-12 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300">
+            <button type="submit" className="w-full h-12 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition-all duration-300" 
+             
+            >
               Send Message 🚀
             </button>
 
@@ -94,6 +135,7 @@ const Section4 = () => {
       </div>
     </div>
   );
-};
+}
+
 
 export default Section4;
