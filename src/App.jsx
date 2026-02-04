@@ -85,17 +85,18 @@ const App = () => {
     <div>
 
     <Navbar/>
-    <Section2 images={images}/>
-    <Uppercontent images={images} />
-    <Section3 data={section3}/>
-    <Section4/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
+    <Routes>
+        <Route path='/Home' element={<Home/>}/>
           <Route path='/About' element={<About/>}/>
             <Route path='/Dishe' element={<Dishe/>}/>
               <Route path='/Contact' element={<Contact/>}/>
 
       </Routes>
+    <Section2 images={images}/>
+    <Uppercontent images={images} />
+    <Section3 data={section3}/>
+    <Section4/>
+      
     
     </div>
   )
